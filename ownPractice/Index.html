@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body >
+    <main>
+      <div class="cellBtnDiceDiv">
+     <button id="btnModel">Game Logic</button>
+    
+    </div>
+      <div class="mainContainer">
+       
+        <div class="player--0 playerTwoo ">
+          <h1>PLAYER 1</h1>
+          <div>
+            <span class="spanPyTwo" id="player--0" > 0 </span>
+          </div>
+          <h2 class="hidden win--0 ">🏆🎉YOU'VE WON🎊🥇</h2>
+          <h2 class="hidden lose--0 ">😥YOU'VE LOST😥</h2>
+          <div class="divCurren--0">
+            <h3>CURRENT</h3>
+            <span class="sCuOne" id="currenplayer--0"> 0 </span>
+          </div>
+        </div>
+        <div class="player--1">
+          <h1>PLAYER 2</h1>
+          <div>
+            <span class="spanPyTwo" id="player--1"> 0 </span>
+          </div>
+          <h2 class="hidden win--1 ">🏆🎉YOU'VE WON🎊🥇</h2>
+          <h2 class="hidden lose--1 ">😥YOU'VE LOST😥</h2>
+          <div class="divCurren--1">
+            <h3>CURRENT</h3>
+            <span id="currenplayer--1"> 0 </span>
+          </div>
+        </div>
+       
+        <div class="DivAsolute">
+          <button class="btnNewGame pri">🆕 New Game</button>
+          <button class="btnDice">🎲 Roll Dice</button>
+          <img class="divDice pri"></img>
+          <button class="btnHold">🕹 Hold</button>
+         
+         
+        </div>
+      </div>
+      <div class="hidden model">
+        <h5 id="btnDismiss">✖</h5>
+        <h2>Game logic</h2>
+        <p>It's have been created with the following logic: 👀👀
+           If the 🎲🎲=1: you'll lose the current score that you have until that moment and it'll change the player's turn, on the other hand you could try many times.
+          Hold button: you'll dicide weather you wanna change your turn 'cause could appear Dice' #1 and it won't count your score.
+        </p>
+        <h2>Good Luck!</h2>
+      </div>
+    </main>
+    <script src="/js/java.js"></script>
+  </body>
+</html>

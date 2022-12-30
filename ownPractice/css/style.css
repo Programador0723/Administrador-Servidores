@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.divDiceNewGame {
+  display: none;
+}
+.pri {
+  display: flex;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  transition: all 2s ease;
+}
+h5 {
+  text-align: right;
+  cursor: pointer;
+}
+h3,
+h2,
+p {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: all 1s ease;
+}
+span,
+h1 {
+  color: #c7365f;
+}
+
+#currenplayer--0 {
+  color: white;
+}
+#currenplayer--1 {
+  color: white;
+}
+.mainContainer {
+  width: 70%;
+  height: auto;
+
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.player--0 {
+  padding: 30px;
+  width: 50%;
+  height: 500px;
+  background-color: rgb(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 2s ease;
+}
+
+.colorApply {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+.spanPyOne {
+  font-size: 50px;
+}
+.divCurren--0 {
+  width: 70%;
+  margin: auto;
+  height: 100px;
+  background-color: rgba(193, 28, 78, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.player--1 {
+  width: 50%;
+  padding: 30px;
+  background-color: rgb(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 2s ease;
+}
+
+.playerTwoo {
+  width: 50%;
+  background-color: rgb(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 2s ease;
+}
+.spanPyTwo {
+  font-size: 100px;
+}
+.divCurren--1 {
+  width: 70%;
+  margin: auto;
+  height: 100px;
+  background-color: rgba(193, 28, 78, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.DivAsolute {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 10%;
+  height: 400px;
+  padding-top: 50px;
+
+  left: 45%;
+  align-items: center;
+}
+.btnNewGame {
+  border-radius: 25px;
+  padding: 7px 15px;
+  background-color: rgb(249, 249, 249, 0.1);
+  border: none;
+}
+.divDice {
+  width: 50%;
+  margin-top: 20px;
+  height: 60px;
+  transition: all 1s ease;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+}
+.diceOne {
+  background-image: url(/img/dice-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btnDice {
+  border-radius: 25px;
+  padding: 7px 15px;
+  background-color: white;
+  border: none;
+}
+.btnHold {
+  border-radius: 25px;
+  padding: 7px 15px;
+  background-color: white;
+  border: none;
+}
+.win {
+  background-color: rgba(9, 65, 18, 0.8);
+  transition: all 2s ease;
+}
+.lose {
+  background-color: rgba(128, 14, 14, 0.8);
+  transition: all 2s ease;
+}
+.hidden {
+  display: none;
+  transition: all 2s ease;
+}
+.model {
+  width: 40%;
+  height: 300px;
+  position: absolute;
+  background-color: rgb(237, 115, 115);
+  top: 10px;
+  left: 50px;
+  padding: 20px;
+  transition: all 2s ease;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+}
+.hiddenDice {
+  display: none;
+  width: 20%;
+  margin: 20px 10px;
+  height: 60px;
+  transition: all 1s ease;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+}
+button {
+  cursor: pointer;
+}
+#btnModel {
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  padding: 5px 10px;
+  margin: 10px;
+  cursor: pointer;
+  color: #c7365f;
+  transition: all 2s ease;
+}
+@media (max-width: 500px) {
+  .divDiceNewGame {
+    display: flex;
+    flex-direction: column;
+  }
+  #btnModel {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    padding: 2px 5px;
+    margin: 10px;
+    cursor: pointer;
+    color: #c7365f;
+    height: 50px;
+    transition: all 2s ease;
+  }
+  .hiddenDice {
+    display: flex;
+  }
+  .cellBtnDiceDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .model {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: rgb(237, 115, 115);
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    transition: all 2s ease;
+    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  }
+  .pri {
+    display: none;
+  }
+  .mainContainer {
+    width: 70%;
+    height: auto;
+
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+  .player--0 {
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 2s ease;
+  }
+  .player--1 {
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 2s ease;
+  }
+  .DivAsolute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: auto;
+
+    left: 10%;
+    top: 60%;
+    align-items: center;
+  }
+  .playerTwoo {
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 2s ease;
+  }
+  .win {
+    background-color: rgba(9, 65, 18, 0.8);
+    transition: all 2s ease;
+  }
+  .lose {
+    background-color: rgba(128, 14, 14, 0.8);
+    transition: all 2s ease;
+  }
+}
